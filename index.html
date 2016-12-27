@@ -1,23 +1,57 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>xGaming WebSite</title>
+</head>
+<body>
+<ul>
+    <li><a class="active" href="#provvisionale">Provvisionale</a></li>
+    <li><a href="#awp">AWP</a></li>
+    <li><a href="#pda">PDA</a></li>
+    <li><a href="#esercenti">Esercenti</a></li>
+    <li><a href="#conteggi">Conteggi</a></li>
+    <li><a href="#about" style="float: right">About</a></li>
+</ul>
+<div class="table-title">
+    <h3>PROVVISIONALE</h3>
 </div>
+<table class="table-fill">
+    <thead>
+    <tr>
+        <th class="text-left">Esercente</th>
+        <th class="text-left">Cassetto</th>
+        <th class="text-left">Casse</th>
+        <th class="text-left">Cassa</th>
+        <th class="text-left">Chiusura</th>
+    </tr>
+    </thead>
+    <tbody class="table-hover">
+    <tr>
+        <td class="text-left">Autolavaggio</td>
+        <td class="text-left">3560</td>
+        <td class="text-left">1600</td>
+        <td class="text-left">25/02/2016</td>
+        <td class="text-left">20/01/2016</td>
+    </tr>
+    <tr>
+        <td class="text-left">Bar Stella</td>
+        <td class="text-left">6650</td>
+        <td class="text-left">4000</td>
+        <td class="text-left">11/11/2016</td>
+        <td class="text-left">23/03/2016</td>
+    </tr>
+    <tr>
+        <td class="text-left">Metelliana</td>
+        <td class="text-left">300</td>
+        <td class="text-left">0</td>
+        <td class="text-left">27/12/2016</td>
+        <td class="text-left">22/12/2016</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
